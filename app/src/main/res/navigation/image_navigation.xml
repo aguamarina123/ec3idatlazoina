@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/image_navigation"
+    app:startDestination="@id/imageFragment">
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.enzo.evac3.Fragments.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_imagesDetailFragment"
+            app:destination="@id/imagesDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="com.enzo.evac3.Fragments.ImageFragment"
+        android:label="fragment_image"
+        tools:layout="@layout/fragment_image" >
+        <action
+            android:id="@+id/action_imageFragment_to_imagesDetailFragment"
+            app:destination="@id/imagesDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.enzo.evac3.Fragments.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" >
+        <action
+            android:id="@+id/action_infoFragment_to_imagesDetailFragment"
+            app:destination="@id/imagesDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imagesDetailFragment"
+        android:name="com.enzo.evac3.Fragments.ImagesDetailFragment"
+        android:label="fragment_images_detail"
+        tools:layout="@layout/fragment_images_detail" />
+</navigation>
